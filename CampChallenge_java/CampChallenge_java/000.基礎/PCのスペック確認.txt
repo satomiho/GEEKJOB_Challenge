@@ -1,0 +1,4 @@
+CPU   　　 インテルcorei5-2520M CPU@2.50GHz
+OS    　　 Window10
+メモリ     4.00GB
+HDD        148GB
