@@ -45,7 +45,12 @@ public class goods13 extends HttpServlet {
                 db_st.setString(1, g);
                 db_st.executeUpdate();
                 
-                out.print("追加しました");
+                db_st = db_con.prepareStatement("select * from registration;");
+                db_data = db_st.executeQuery();
+                
+                while(db_data.next()){
+                    out.print(db_data.getString("goods")+"<br>");
+                }
                 
                 db_data.close();
                 db_st.close();
